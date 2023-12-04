@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         a {
+            text-decoration: none;
+            color: inherit;
+        }
+        body>div {
+            border: 1px dashed red;
+        }
+
+        .frame {
+            width: 1400px;
+            margin: 0 auto;
+        }
+
+        .sb {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .top {
+            background-color: rgb(248, 250, 240);
+            width: 1400px;
+            height: 100px;
+            border-top: 3px solid rgb(49, 40, 40);
+        }
+
+        .top>.left {
+            width: 350px;
+            margin: 30px 5px;
+            font-size: 12px;
+            color: rgb(115, 106, 96);
+        }
+
+        .top>.right {
+            width: 300px;
+            margin: 30px 5px;
+            font-size: 12px;
+            color: rgb(115, 106, 96);
+        }
+
+        .top>.logo {
+            margin: 20px;
+        }
+
+        .menu {
+            position: relative;
+            background-color: #fff;
+        }
+
+        .menu>.left>ul {
+            width: 50px;
+        }
+
+        .menu>.right>ul {
+            width: 100%;
+        }
+
+        .menu>.left>ul>li {
+            font-size: 12px;
+            width: 2px;
+            color: #75675c;
+        }
+
+        .menu>.right>ul>li {
+            font-size: 12px;
+            width: 150px;
+            padding: 0 20px;
+            color: #75675c;
+            font-weight: bold;
+
+        }
+
+        ul>li {
+            height: 25px;
+            line-height: 25px;
+        }
+        ul.sb>li:hover{
+            color: darkkhaki;
+
+        }
+
+        .bottom>.event2 {
+            border-top: 3px solid #75675c;
+            margin: 20px;
+            padding-top: 20px;
+
+        }
+        .bottom{
+            margin-top: 20px;
+        }
+        .bottom>.event>div>button {
+            left: 0px;
+            top: 137px;
+            width: 154px;
+            height: 43px;
+            line-height: 43px;
+            border: 1px solid #c8bfb0;
+            border-radius: 5px;
+            color: #ab9b7f;
+            text-align: center;
+        }
+        .bottom2{
+            display: flex;
+            justify-content:space-evenly;
+            
+            
+        }
+        .sticky1,
+        .sticky2{
+            position: sticky;
+            top: 0; 
+        }
+        .sticky2{
+            top: 100px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="top sb frame sticky1">
+        <div class="left sb">
+            <div>FACEBOOK</div>
+            <div>BLOG</div>
+            <div>INSTAGRAM</div>
+            <div>TWITTER</div>
+            <div>YOUTUBE</div>
+        </div>
+        <div class="logo center">
+            <div><img src="	https://www.dunkindonuts.co.kr/assets/images/common/logo_dunkindonuts.png"></div>
+        </div>
+        <div class="right sb">
+            <div>창업문의</div>
+            <div>고객센터</div>
+            <div>search</div>
+            <div>🔍</div>
+        </div>
+    </div>
+
+    <div class="menu sb frame sticky2">
+        <div class="left ">
+            <ul class="sb">
+                <li>LOGIN</li>
+                <li>JOIN</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul class="sb">
+                <li><a href="#">DD COMMITMENT</a>
+                </li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">영양정보 및 알레르기</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">ONLINE STORE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main frame center">
+        <img src="https://www.dunkindonuts.co.kr/assets/images/common/dom_w_231130.png" width="100%" height="600px">
+    </div>
+
+    <div class="bottom sb frame">
+        <div class="event">
+            <img src="	https://www.dunkindonuts.co.kr/assets/images/main/tit_new_event.png">
+
+            <div style="margin:50px 0px;"><button>전체 이벤트보기</button></div>
+        </div>
+
+        <div class="event2">
+
+            <strong>던킨의 다양한 혜택과</strong>
+            <br>
+            <strong>이벤트 그리고 신제품</strong>
+            <p>sweet break, dunkin'donuts</p>
+        </div>
+
+        <div class="event3">
+            <a href="https://youtu.be/TfUz6rnBwiQ?list=PLaoYJk3DWW99y7C6g575JC6X6nfHoeVfT"></a>
+        </div>
+    </div>
+
+    <div class="bottom2 frame sb">
+        <div class="slide1">
+            <img src="	https://www.dunkindonuts.co.kr/upload/mbanner/1675210267.jpg">
+        </div>
+        <div class="slide2">
+            <img src="https://www.dunkindonuts.co.kr/upload/mbanner/1673493393.png">
+        </div>
+        <div class="slide3">
+            <img src="https://www.dunkindonuts.co.kr/upload/mbanner/1676113295.jpg">
+        </div>
+        <div class="slide4">
+            <img src="	https://www.dunkindonuts.co.kr/upload/mbanner/1720318754.png">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
