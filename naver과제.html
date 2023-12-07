@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz2.html</title>
+    <style>
+        td {
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <table width="600" border="0" align="center">
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <p align="right">
+                    <select name="lang">
+                        <option>한국어</option>
+                        <option>English</option>
+                        <option>中文</option>
+                    </select>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><h1 align="center" style="color: #03c75a;">NAVER</h1></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ID 로그인</td>
+            <td>일회용 번호</td>
+            <td>QR코드</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="text" name="id" placeholder="아이디"
+                       style="width:220px; padding: 5px 10px;">
+                <br>
+                <input type="password" name="pw" placeholder="비밀번호"
+                       style="width:220px; padding: 5px 10px; margin-top: 2px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    로그인 상태유지
+                </label>
+            </td>
+            <td></td>
+            <td>
+                <label for="">
+                    IP보안
+                    <input type="range" min="0" max="1" step="1"
+                           style="width: 25px;">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <button id="loginButton" style="background-color: #03c75a; 
+                               color: white;
+                               border: 0;
+                               padding: 10px 100px;
+                               border-radius: 10px;
+                               font-weight: bold;
+                               font-size: 20px;
+                               margin-top: 20px;">로그인</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        // 로그인 버튼 클릭 시 실행되는 함수
+        document.getElementById("loginButton").addEventListener("click", function() {
+            // 입력된 아이디와 비밀번호 가져오기
+            var username = document.getElementsByName("id")[0].value;
+            var password = document.getElementsByName("pw")[0].value;
+
+            // 여기서는 간단하게 username이 "user"이고 password가 "1234"일 때 로그인 성공으로 가정합니다.
+            if (username === "user" && password === "1234") {
+                alert("로그인 성공!");
+                // 로그인 성공 시 페이지 이동 (임시로 "home.html"로 이동하도록 설정)
+                window.location.href = "home.html";
+            } else {
+                alert("로그인 실패. 다시 시도해주세요.");
+            }
+        });
+    </script>
+    
+</body>
+</html>
